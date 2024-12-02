@@ -48,9 +48,15 @@ const options: ApexOptions = {
     },
   ],
 };
-
+let dataa = {
+  desktop: 50,
+  mobile: 25,
+  tablet: 10,
+  others: 15,
+};
 const ChartThree: React.FC = () => {
-  const series = [65, 34, 12, 56];
+  // const series = [65, 34, 12, 56];
+  const series = [dataa.desktop, dataa.tablet, dataa.mobile, dataa.others];
 
   return (
     <div className="col-span-12 rounded-sm border border-stroke bg-white px-5 pb-5 pt-7.5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:col-span-5">
@@ -110,7 +116,7 @@ const ChartThree: React.FC = () => {
             <span className="mr-2 block h-3 w-full max-w-3 rounded-full bg-primary"></span>
             <p className="flex w-full justify-between text-sm font-medium text-black dark:text-white">
               <span> Desktop </span>
-              <span> 65% </span>
+              <span> {dataa.desktop}% </span>
             </p>
           </div>
         </div>
@@ -119,7 +125,7 @@ const ChartThree: React.FC = () => {
             <span className="mr-2 block h-3 w-full max-w-3 rounded-full bg-[#6577F3]"></span>
             <p className="flex w-full justify-between text-sm font-medium text-black dark:text-white">
               <span> Tablet </span>
-              <span> 34% </span>
+              <span> {dataa.tablet} %</span>
             </p>
           </div>
         </div>
@@ -128,7 +134,7 @@ const ChartThree: React.FC = () => {
             <span className="mr-2 block h-3 w-full max-w-3 rounded-full bg-[#8FD0EF]"></span>
             <p className="flex w-full justify-between text-sm font-medium text-black dark:text-white">
               <span> Mobile </span>
-              <span> 45% </span>
+              <span> {dataa.mobile}% </span>
             </p>
           </div>
         </div>
@@ -137,7 +143,7 @@ const ChartThree: React.FC = () => {
             <span className="mr-2 block h-3 w-full max-w-3 rounded-full bg-[#0FADCF]"></span>
             <p className="flex w-full justify-between text-sm font-medium text-black dark:text-white">
               <span> Unknown </span>
-              <span> 12% </span>
+              <span> {dataa.others} %</span>
             </p>
           </div>
         </div>
